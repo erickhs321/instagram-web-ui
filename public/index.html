@@ -13,22 +13,23 @@
   </head>
 
   <body>
-    <nav class="nav">
-      <ul class="container">
-        <li class="nav__item">
-          <img
-            class="nav__logo"
-            src="/public/img/instagram-logo.svg"
-            alt="instagram-logo"
-          />
-        </li>
-        <li class="nav__item">
-          <i class="nav__direct far fa-paper-plane"></i>
-        </li>
-      </ul>
-    </nav>
-
-    <main class="container">
+    <header class="header">
+      <nav class="header__nav">
+        <ul class="container container--row-space-between">
+          <li class="header__item">
+            <img
+              class="header__logo"
+              src="/public/img/instagram-logo.svg"
+              alt="instagram-logo"
+            />
+          </li>
+          <li class="header__item">
+            <i class="header__direct far fa-paper-plane"></i>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container container--column">
       <section class="stories">
         <ul class="container">
           <li class="stories__profile">
@@ -54,7 +55,7 @@
               <img
                 src="/public/img/profiles/black-panther/black-panther-profile.jpg"
                 alt="Black Panther's profile picture"
-                class="stories__profile-image"
+                class="stories__profile-picture"
               />
             </a>
           </li>
@@ -63,8 +64,10 @@
 
       <section class="feed">
         <article class="post">
-          <section class="post__header">
-            <a href="#">
+          <section
+            class="post__header container container--row-space-between container container--row-space-between"
+          >
+            <a href="#" class="container">
               <img
                 class="post__profile-picture"
                 src="img/profiles/yoda/yoda-profile.jpg"
@@ -84,6 +87,7 @@
               alt="Yoda's post content"
             />
           </section>
+
           <section class="post__actions">
             <button class="post__action-button">
               <i class="far fa-heart"></i>
@@ -96,9 +100,9 @@
             </button>
           </section>
 
-          <section class="post__likes">
+          <section class="post__likes container">
             <img
-              class="post__profile-picture--liked"
+              class="post__profile-picture post__profile-picture--liked"
               src="/public/img/profiles/domino/domino-profile.jpg"
               alt="Domino's profile picture"
             />
@@ -110,11 +114,11 @@
         </article>
 
         <article class="post">
-          <section class="post__header">
-            <a href="#">
+          <section class="post__header container container--row-space-between">
+            <a href="#" class="container">
               <img
                 class="post__profile-picture"
-                src="public/img/profiles/gamora/gamora-profile.jpg"
+                src="/public/img/profiles/gamora/gamora-profile.jpg"
               />
               <span class="post__profile-name">Gamora Zen</span>
             </a>
@@ -131,7 +135,6 @@
             />
           </section>
 
-          </section>
           <section class="post__actions">
             <button class="post__action-button">
               <i class="far fa-heart"></i>
@@ -144,9 +147,9 @@
             </button>
           </section>
 
-          <section class="post__likes">
+          <section class="post__likes container">
             <img
-              class="post__profile-picture-person-liked-it"
+              class="post__profile-picture post__profile-picture--liked"
               src="/public/img/profiles/carol/carol-profile.jpg"
               alt=" Carol Danvers profile picture"
             />
@@ -158,8 +161,8 @@
         </article>
 
         <article class="post">
-          <section class="post__header">
-            <a href="#">
+          <section class="post__header container container--row-space-between">
+            <a href="#" class="container">
               <img
                 class="post__profile-picture"
                 src="/public/img/profiles/black-panther/black-panther-profile.jpg"
@@ -191,9 +194,9 @@
             </button>
           </section>
 
-          <section class="post__likes">
+          <section class="post__likes container">
             <img
-              class="post__profile-picture-person-liked-it"
+              class="post__profile-picture post__profile-picture--liked"
               src="/public/img/profiles/bruce/bruce-profile.jpg"
               alt="Bruce Wayne profile picture"
             />
@@ -205,8 +208,8 @@
         </article>
 
         <article class="post">
-          <section class="post__header">
-            <a href="#">
+          <section class="post__header container container--row-space-between">
+            <a href="#" class="container">
               <img
                 class="post__profile-picture"
                 src="/public/img/profiles/carol/carol-profile.jpg"
@@ -238,7 +241,7 @@
             </button>
           </section>
 
-          <section class="post__likes">
+          <section class="post__likes container">
             <img
               class="post__profile photo of those who liked itprofile-picture-person-liked-it"
               src="/public/img/profiles/yoda/yoda-profile.jpg"
@@ -252,8 +255,8 @@
         </article>
 
         <article class="post">
-          <section class="post__header">
-            <a href="#">
+          <section class="post__header container container--row-space-between">
+            <a href="#" class="container">
               <img
                 class="post__profile-picture"
                 src="/public/img/profiles/bruce/bruce-profile.jpg"
@@ -285,9 +288,9 @@
             </button>
           </section>
 
-          <section class="post__likes">
+          <section class="post__likes container">
             <img
-              class="post__profile-picture-person-liked-it"
+              class="post__profile-picture post__profile-picture--liked"
               src="/public/img/profiles/gamora/gamora-profile.jpg"
               alt="Yoda's profile picture"
             />
